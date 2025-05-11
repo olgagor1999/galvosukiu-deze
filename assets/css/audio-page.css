@@ -1,0 +1,176 @@
+/* Audio Wrapper */
+.audio-wrapper {
+    background-color: #010535; /* Black background */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    text-align: center;
+}
+
+.h1 {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+/* Audio Info */
+.audio-info {
+    margin-bottom: 15px;
+}
+
+.audio-author {
+    font-size: 14px;
+    color: #fffc04; /* Yellow color for the author */
+    margin: 0;
+    font-weight: bold;
+}
+
+.audio-caption {
+    font-size: 18px;
+    color: #fff; /* White color for the caption */
+    margin: 5px 0 15px;
+}
+
+/* Custom Audio Player */
+.custom-audio-player {
+    background-color: #010535;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    color: #fff;
+}
+
+.custom-audio-player .controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    gap: 10px; /* Add spacing between elements */
+}
+
+/* Play/Pause Button */
+.custom-audio-player button {
+    background-color: #fffc04; /* Yellow button */
+    color: #010535;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Adjust size for the icon */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.custom-audio-player button:hover {
+    background-color: #fff;
+    color: #010535;
+}
+
+/* Progress Bar */
+.custom-audio-player input[type="range"] {
+    flex: 1; /* Allow the progress bar to take up available space */
+    margin: 0 10px;
+    cursor: pointer;
+    appearance: none;
+    background-color: #444; /* Background for unplayed portion */
+    height: 5px;
+    border-radius: 5px;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.custom-audio-player input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: #fffc04; /* Yellow thumb */
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+}
+
+.custom-audio-player input[type="range"]::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background-color: #fffc04; /* Yellow thumb */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.custom-audio-player input[type="range"]::-ms-thumb {
+    width: 15px;
+    height: 15px;
+    background-color: #fffc04; /* Yellow thumb */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Volume Slider */
+.custom-audio-player #volume-slider {
+    width: 20%; /* Shortened to 20% of the audio player width */
+    margin-left: 10px;
+    appearance: none;
+    background-color: #444; /* Background for unadjusted volume */
+    height: 5px;
+    border-radius: 5px;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.custom-audio-player #volume-slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: #fffc04; /* Yellow thumb */
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+}
+
+.custom-audio-player #volume-slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background-color: #fffc04; /* Yellow thumb */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.custom-audio-player #volume-slider::-ms-thumb {
+    width: 15px;
+    height: 15px;
+    background-color: #fffc04; /* Yellow thumb */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .custom-audio-player .controls {
+        gap: 5px; /* Reduce spacing between elements */
+    }
+
+    .custom-audio-player button {
+        padding: 8px; /* Reduce button size */
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .custom-audio-player input[type="range"] {
+        height: 4px; /* Reduce height of sliders */
+    }
+
+    .custom-audio-player #volume-slider {
+        width: 25%; /* Adjust volume slider width for smaller screens */
+    }
+}

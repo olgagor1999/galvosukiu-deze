@@ -1,0 +1,135 @@
+/* Global Styles */
+body {
+  background-color: #010535; /* Darker background for the body */
+  color: #fff;
+  font-family: 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Single Post Container */
+.single-post {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Post Header */
+.post-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.featured-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.post-meta {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.post-meta .post-date,
+.post-meta .post-category {
+  margin-right: 10px;
+}
+
+.post-title {
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* Post Content */
+.post-content {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.post-content h2,
+.post-content h3,
+.post-content h4 {
+  color: #fff;
+  margin-top: 30px;
+}
+
+.post-content p {
+  margin-bottom: 20px;
+}
+
+/* Post Footer */
+.post-footer {
+  margin-top: 40px;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.post-tags .tag {
+  background-color: #fffc04;
+  color: #fff;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: 3px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.post-share {
+  margin-top: 20px;
+  text-align: center;
+  display: flex; /* Use flexbox for horizontal alignment */
+  align-items: center; /* Vertically align items */
+  justify-content: center; /* Center the content horizontally */
+  gap: 10px; /* Add spacing between the text and icons */
+}
+
+.post-share p {
+  margin: 0; /* Remove default margin from the text */
+  font-size: 16px; /* Adjust font size if needed */
+  color: #fff; /* Ensure the text color matches the design */
+}
+
+.post-share ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Align icons horizontally */
+  gap: 10px; /* Add spacing between icons */
+}
+
+.post-share li {
+  display: inline-block;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+      .single-post {
+        padding: 20px 10px;
+      }
+    
+      .post-title {
+        font-size: 24px;
+      }
+    
+      .post-content {
+        font-size: 14px;
+      }
+    }
+  
+
+
+
+
+
+
+
+
+  
